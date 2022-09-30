@@ -18,7 +18,7 @@
     "clean": "rm -rf node_modules coverage dist .nyc_output",
     "coverage": "nyc --exclude dist/test --reporter=html npm run test:all",
     "lint": "tslint 'src/**/*.ts' 'test/**/*.test.ts'",
-    "start": "node dist/src/index.js",
+    "start": "npm start,
     "start:dev": "tsc-watch --onSuccess 'node --inspect=0.0.0.0:5858 dist/src/index.js'",
     "test": "npm run build && mocha --exit --recursive dist/test/unit",
     "test:integration": "npm run build && mocha --exit --recursive dist/test/integration",
